@@ -1,0 +1,78 @@
+
+<!-- Created by SODE Placer (c) Jeffrey Staehli -->
+<SODE>
+	<Stand AfcadICAO="RKTN" AfcadGateName="PARKING" AfcadParkingNumber="1">
+			<!-- StandLocation;35.898622758686535;128.6421114206314;213.88256835937503;16.0-->
+
+	</Stand>
+	<Stand AfcadICAO="RKTN" AfcadGateName="PARKING" AfcadParkingNumber="2">
+			<!-- StandLocation;35.89894093573094;128.64151373505592;214.3177490234375;10.0-->
+
+	</Stand>
+	<Stand AfcadICAO="RKTN" AfcadGateName="PARKING" AfcadParkingNumber="3">
+			<!-- StandLocation;35.89920412749052;128.64105507731438;213.63876342773438;10.0-->
+
+	</Stand>
+	<Stand AfcadICAO="RKTN" AfcadGateName="GATE" AfcadParkingNumber="1">
+			<!-- StandLocation;35.901085026562214;128.63760843873024;214.0;23.0-->
+
+		<SimObject Name="Jetway 1 GATE 1">
+			<Placement Lat="35.9007508096" Lon="128.6375981487" Alt="-4.265092#AGL" Hdg="222.3"/>
+			<Model SimTitle="AJS_331_02-LEBL">
+				<Jetway InitialState="80;20;60;0"/>
+			</Model>
+		</SimObject>
+	</Stand>
+	<Stand AfcadICAO="RKTN" AfcadGateName="GATE" AfcadParkingNumber="3">
+			<!-- StandLocation;35.90051304548979;128.63861694931984;214.0;23.0-->
+
+		<SimObject Name="Jetway 1 GATE 3">
+			<Placement Lat="35.9001944074" Lon="128.6386131235" Alt="-4.593176#AGL" Hdg="234.1"/>
+			<Model SimTitle="AJS_331_02-LEBL">
+				<Jetway InitialState="80;20;60;0"/>
+			</Model>
+		</SimObject>
+	</Stand>
+	<Stand AfcadICAO="RKTN" AfcadGateName="GATE" AfcadParkingNumber="2">
+			<!-- StandLocation;35.90078327804804;128.638104647398;214.0;23.0-->
+
+		<SimObject Name="Jetway 1 GATE 2">
+			<Placement Lat="35.9004714553" Lon="128.6381077702" Alt="-4.593176000000001#AGL" Hdg="230.1"/>
+			<Model SimTitle="AJS_331_02-LEBL">
+				<Jetway InitialState="80;20;60;0"/>
+			</Model>
+		</SimObject>
+	</Stand>
+
+	<SimObject Name="PAPI Static">
+		<Placement Lat="35.8879272659" Lon="128.6678449749" Alt="1.5#AGL" Hdg="305.0"/>
+		<Model SimTitle="12bPilot_SODE_PAPI"/>
+	</SimObject>
+	<Group Name="PAPI Lights">
+		<TriggerableVisibility Input="TextMenu" Action="Turn On,Turn Off" VisibleOnLoad="Yes"/>
+		<SimObject Name="UnitA">
+			<Placement Lat="35.8878231402" Lon="128.6677665202" Alt="3.7000000000000006#AGL" Hdg="305.0"/>
+			<Model SimTitle="12bPilot_SODE_PAPI_Light">
+				<ConditionalVisibility Variable="SeparationPlane" UseEyePoint="Yes" Elevation="2.5" Azimuth="0" Offset="0;0;0" FlipNormal="No"/>
+			</Model>
+		</SimObject>
+		<SimObject Name="UnitB">
+			<Placement Lat="35.8878893386" Lon="128.6678243147" Alt="3.7000000000000006#AGL" Hdg="305.0"/>
+			<Model SimTitle="12bPilot_SODE_PAPI_Light">
+				<ConditionalVisibility Variable="SeparationPlane" UseEyePoint="Yes" Elevation="2.833333" Azimuth="0" Offset="0;0;0" FlipNormal="No"/>
+			</Model>
+		</SimObject>
+		<SimObject Name="UnitC">
+			<Placement Lat="35.8879558482" Lon="128.6678812156" Alt="3.7000000000000006#AGL" Hdg="305.0"/>
+			<Model SimTitle="12bPilot_SODE_PAPI_Light">
+				<ConditionalVisibility Variable="SeparationPlane" UseEyePoint="Yes" Elevation="3.166667" Azimuth="0" Offset="0;0;0" FlipNormal="No"/>
+			</Model>
+		</SimObject>
+		<SimObject Name="UnitD">
+			<Placement Lat="35.8880220758" Lon="128.6679381489" Alt="3.7000000000000006#AGL" Hdg="305.0"/>
+			<Model SimTitle="12bPilot_SODE_PAPI_Light">
+				<ConditionalVisibility Variable="SeparationPlane" UseEyePoint="Yes" Elevation="3.5" Azimuth="0" Offset="0;0;0" FlipNormal="No"/>
+			</Model>
+		</SimObject>
+	</Group>
+</SODE>

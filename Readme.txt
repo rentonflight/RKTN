@@ -15,4 +15,6 @@ https://twitch.tv/rentonflight
 https://www.youtube.com/c/랜튼
 
 
+SODE 설치도 필요합니다.
+
 * FSX 재작업 by 김성호
